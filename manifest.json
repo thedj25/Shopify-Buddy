@@ -1,0 +1,30 @@
+{
+  "name": "Shopify Buddy",
+  "description": "Pithy description (132 characters or less, no HTML)",
+  "version": "2",
+  "manifest_version": 2,
+
+  "browser_action":{
+    "default_title": "Shopify Buddy V2 - Dev Mode",
+    "default_popup": "popup.html"
+    
+  },
+
+  "content_scripts": [
+      {
+        "run_at":"document_end",
+        "js": ["content-scripts.js", "jquery-1.12.3.min.js"],
+        "matches": ["http://*/*", "https://*/*"]
+      }
+    ],
+
+  "permissions":[
+    "https://ajax.googleapis.com/*",
+     "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]  
+
+
+
+}
