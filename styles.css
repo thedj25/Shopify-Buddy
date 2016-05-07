@@ -62,3 +62,7 @@ table {
 .go-to-buttons:hover{
 	background-color:grey;
 }
+
+.load-hide{
+	display: none;
+}
